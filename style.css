@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+header{
+    padding: 0.5rem 7%;
+    border-bottom: 1px solid #c2c2c6;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+section{
+    padding: 0.5rem 8%;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #f1f1f2;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav .search-box{
+    position: relative;
+}
+
+header .nav .search-box input{
+    position: relative;
+    background-color: #f1f1f2;
+    padding: 14px 10px;
+    padding-right: 120px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+header .nav .search-box::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 60%;
+    background-color: #c2c2c6;
+    top: 10px;
+    right: 60px;
+    z-index: 100;
+}
+
+header .nav .search-box span{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #c2c2c2;
+}
+
+header .nav .search-box span i{
+    font-size: 1.1rem;
+}
+
+header .nav .acc{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+header .nav .acc button{
+    padding: 10px 15px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+header .nav .acc li:nth-child(1) button{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+header .nav .acc li:nth-child(2) button{
+    background-color: #fe2c55;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.content .left-section{
+    overflow: scroll;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    padding-right: 20px;
+    padding-top: 70px;
+}
+
+.content .left-section .content-1{
+    margin-top: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.content .left-section .content-1 ul{
+    list-style: none;
+}
+
+.content .left-section .content-1 ul li{
+    margin-bottom: 25px;
+}
+
+.content .left-section .content-1 ul li:nth-child(1) i,
+.content .left-section .content-1 ul li:nth-child(1) a{
+    color: #fe2c55;
+}
+
+.content .left-section .content-1 ul li a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.content .left-section .content-1 ul li i{
+    margin-right: 15px;
+    font-size: 1.3rem;
+    color: #444;
+}
+
+.content .left-section .content-2{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.content .left-section .content-2 p{
+    margin-top: 20px;
+    color: #c2c2c6;
+    font-size: 1rem;
+}
+
+.content .left-section .content-2 button{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border: 1px solid #fe2c55;
+    background-color: transparent;
+    color: #fe2c55;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content .left-section .content-2 button:hover{
+    background-color: #fe2c55;
+    color: #fff;
+    transition: 0.5rem;
+}
+
+.content .left-section .content-3{
+    margin-top: 20px;
+}
+
+.content .left-section .content-3 .title{
+    color: #444;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+
+.content .left-section .content-3 .content-wrapper{
+    margin-top: 20px;
+    display: flex;
+}
+
+.content .left-section .content-3 p strong{
+    color: #444;
+    font-size: 1rem;
+}
+
+.content .left-section .content-3 p{
+    color: #c2c2c6;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+.content .left-section .content-3 ul li img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content .left-section .content-3 span a{
+    color: #fe2c55;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.content .content-4 .category{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.content .content-4 .category li{
+    background-color: transparent;
+    border: 1px solid #c2c2c6;
+    padding: 5px 7px;
+    border-radius: 20px;
+}
+
+.content .content-5 .category{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.content .left-section .content-5 li a{
+    text-decoration: none;
+    color: #a0a1a6;
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+
+.content .right-section{
+    float: right;
+    width: 70%;
+    margin-top: 80px;
+    padding-left: 100px;
+}
+
+.content .right-section .content-card{
+    border-bottom: 1px solid #c2c2c6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content .right-section .content-card .header-content .details-section{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.content .right-section .content-card .header-content .details-section img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.content .right-section .content-card .header-content .details-section span{
+    position: absolute;
+    right: 10px;
+}
+
+.content .right-section .content-card .header-content .details-section span button{
+    border: 1px solid #fe2c55;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 25px;
+    text-transform: capitalize;
+    font-size: .9rem;
+    cursor: poi;
+}
+
+.content .right-section .content-card .header-content .content-body{
+    margin-top: 20px;
+}
+
+.content .right-section .content-card .header-content .content-body .videos{
+    position: relative;
+    margin-top: 20px;
+    width: 65%;
+}
+
+.content .right-section .content-card .header-content .content-body .videos .sci{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.content .right-section .content-card .header-content .content-body .videos .sci ul{
+    list-style: none;
+}
+
+.content .right-section .content-card .header-content .content-body .videos .sci ul li{
+    position: relative;
+    background-color: #f1f1f2;
+    color: #161823;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content .right-section .content-card .header-content .content-body .videos .sci ul li p{
+    position: absolute;
+    bottom: -18px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+
+/* Login Section */
+.overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 1000%;
+    z-index: 200;
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.loginForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 24%;
+    top: 10%;
+    z-index: 1000;
+    visibility: hidden;
+}
+
+.loginForm.active{
+    visibility: visible;
+}
+
+.loginForm .card{
+    position: relative;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 70px 50px;
+    text-align: center;
+}
+
+.loginForm .card h3{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.loginForm .card .closeBtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    background-color: #f1f1f2;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm .card ul{
+    overflow-y: scroll;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.loginForm .card ul li{
+    margin-bottom: 20px;
+}
+
+.loginForm .card ul li button{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 100px;
+    background-color: transparent;
+    border: 1px solid #a0a1a6;
+}
+
+.loginForm .card ul li button a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+.loginForm .card ul li button i{
+    position: absolute;
+    left: 20px;
+}
+
+.loginForm .card p{
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.loginForm .card p a{
+    color: #fe2c55;
+    font-weight: bold;
+    text-decoration: none;
+}
